@@ -1,0 +1,24 @@
+cast --to-base 0x714d1 dec  // command to convert hex of gas
+
+cast send 0xe7f1725E7734CE288F8367e1Bb
+143E90bb3F0512 "store(uint256)" 123 --rpc-url $RPC_URL --private-key $PRIVATE_KEY
+// way to input and sign any button
+
+cast call 0xe7f1725E7734CE288F8367e1Bb
+143E90bb3F0512 "retrieve()"
+// this is call the fuction and it will give the input in hex decimal form
+
+to decode it we use command
+cast --to-base theHexDecimalValue dec
+
+forge coverage --fork-url $SEPOLIA_RPC_URL  // to see how much test we are covering
+
+instead of --rpc-url we wrote --fork-url coz we are doing testing
+
+ forge test --match-test testPriceFeedVersionIsAccurate // for testing the paticular function
+
+-vvv // for seeing the error in detail
+
+
+
+
