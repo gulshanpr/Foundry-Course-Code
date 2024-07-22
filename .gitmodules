@@ -10,3 +10,6 @@
 [submodule "AA/lw3_AA/multisig-scw/contracts/lib/openzeppelin-contracts"]
 	path = AA/lw3_AA/multisig-scw/contracts/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "AA/lw3_AA/multisig-scw/contracts/lib/account-abstraction"]
+	path = AA/lw3_AA/multisig-scw/contracts/lib/account-abstraction
+	url = https://github.com/eth-infinitism/account-abstraction
