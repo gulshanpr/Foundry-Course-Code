@@ -7,3 +7,6 @@
 [submodule "AA/lw3_AA/multisig-scw/contracts/lib/forge-std"]
 	path = AA/lw3_AA/multisig-scw/contracts/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "AA/lw3_AA/multisig-scw/contracts/lib/openzeppelin-contracts"]
+	path = AA/lw3_AA/multisig-scw/contracts/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
