@@ -1,3 +1,6 @@
 [submodule "AA/patrick_AA/lib/forge-std"]
 	path = AA/patrick_AA/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "AA/patrick_AA/lib/account-abstraction"]
+	path = AA/patrick_AA/lib/account-abstraction
+	url = https://github.com/eth-infinitism/account-abstraction
