@@ -6,7 +6,7 @@ import { BigNumber } from "ethers";
 import { useEffect, useState } from "react";
 import { Client, IUserOperation } from "userop";
 import { useWalletClient } from "wagmi";
-import Button from "./button";
+// import Button from "./button";
 import Icon from "./icon";
 import { useIsMounted } from "@/hooks/useIsMounted";
 
@@ -182,7 +182,7 @@ export default function TransactionsList({
                 ))}
 
                 {transaction.txHash ? (
-                  <Button
+                  <button
                     onClick={() =>
                       window.open(
                         `https://goerli.etherscan.io/tx/${transaction.txHash}`,
@@ -191,25 +191,25 @@ export default function TransactionsList({
                     }
                   >
                     View on Etherscan
-                  </Button>
+                  </button>
                 ) : transaction.pendingSigners.length === 0 ? (
-                  <Button
+                  <button
                     onClick={() => sendTransaction(transaction)}
                     isLoading={loading}
                   >
                     Execute Txn
-                  </Button>
+                  </button>
                 ) : transaction.pendingSigners.includes(
                     address.toLowerCase()
                   ) ? (
-                  <Button
+                  <button
                     onClick={() => signTransaction(transaction)}
                     isLoading={loading}
                   >
                     Sign Txn
-                  </Button>
+                  </button>
                 ) : (
-                  <Button disabled>No Action Reqd</Button>
+                  <button disabled>No Action Reqd</button>
                 )}
               </div>
             </div>
